@@ -27,9 +27,14 @@
           <div class="col">
             <img class="responsive-img" src="https://via.placeholder.com//200x80">
           </div>
-          <div class="col">
-            <img class="responsive-img" src="https://via.placeholder.com//800x80">
+          <div class="col container">
+              <Team nombre="María Emilia Ramírez" github="https://github.com/MariaEmiliaRG" linkedin="https://www.linkedin.com/in/mariaemiliaramirezgomez/"/>
+              <Team nombre="Emilia" github="https://github.com/MariaEmiliaRG" linkedin="https://www.linkedin.com/in/mariaemiliaramirezgomez/"/>
+              <Team nombre="Emilia" github="https://github.com/MariaEmiliaRG" linkedin="https://www.linkedin.com/in/mariaemiliaramirezgomez/"/>
+              <Team nombre="Emilia" github="https://github.com/MariaEmiliaRG" linkedin="https://www.linkedin.com/in/mariaemiliaramirezgomez/"/>
+              <Team nombre="Emilia" github="https://github.com/MariaEmiliaRG" linkedin="https://www.linkedin.com/in/mariaemiliaramirezgomez/"/>
           </div>
+        
         </div>
       </div>
     </footer>
@@ -41,9 +46,14 @@
 
 <script>
 
+  import Team from '@/components/Team.vue'
   export default {
-    mounted(){
-      M.AutoInit;
+    name: 'App',
+    components: {
+      Team
+    },
+    mounted() {
+        M.AutoInit();
     }
   }
 
